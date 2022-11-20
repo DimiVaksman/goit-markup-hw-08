@@ -1,25 +1,42 @@
-.footer-container{
-    display: flex;
-    align-items: baseline;
-  }
-  
-.footer-container-addres{
-    margin-right: 70px;
-  }
-  
-  
-.footer-container-icon{
-  
-    margin-right: 93px;
-    
-  }
+
   
   
 .footer {
     background-color: rgba(47, 48, 58, 1);
   }
-  
 
+  .footer-section{
+    padding: 60px 0;
+    @media screen and (min-width: 768px) {
+      padding-top: 83px;
+      padding-right: 0px;
+      padding-bottom: 83px;
+      padding-left: 0px;
+
+          }
+  }
+
+  .footer-container{
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px){
+      display: flex;
+      flex-wrap: nowrap ;
+    }
+  }
+  
+  .tab-logo-ad{
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px){
+      margin-right: 70px;
+          }
+  }
 
 .footer-item{
   &:not(:last-child) {
@@ -29,25 +46,28 @@
 
   
 .footer-addres {
+  text-align: center;
     font-family: var(--primary-font);
     color: var(--secandary-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none;
-    list-style-type: none;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px){
+      margin-bottom: 0;
+          }
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       color: var(--blue-color);
     }
-  }
- 
-  .footer-map {
-    text-decoration: none;
-    list-style-type: none;
+
+    @media screen and (min-width: 1200px){
+      text-align: left;;
+          }
   }
   .map {
     font-family: var(--primary-font);
@@ -56,8 +76,6 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none;
-    list-style-type: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -66,9 +84,14 @@
   }
   }
   
-  
+  .footer-container-icon{
+    @media screen and (min-width: 1200px){
+      margin-right: 93px;
+          }
+  }
 
   .footer-icon-tittle {
+    text-align: center;
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 14px;
@@ -77,11 +100,16 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px){
+      text-align: left;
+          }
     }
+
   .footer-icon-list {
       display: flex;
       justify-content: center;
-      gap: 10px
+      gap: 10px;
+      margin-bottom: 60px;
     
     }
   .footer-icon-item {
