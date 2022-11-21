@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <!-- <header class="header header-border">
+    <header class="header header-border">
       <div class="container">
         <nav class="navigation">
-          <a class="logo navigation__logo" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo link navigation__logo" href="./index.html"><span>Web</span>Studio</a>
           <ul class="menu list">
             <li class="menu__item">
               <a class="menu__link current" href="./index.html">Студія</a>
@@ -46,8 +46,47 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open">
+          <svg class="open-icon" width="24" height="16">
+            <use href="./image/sprite.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <button type="button" class="menu-close">
+          <svg class="open-icon" width="24" height="16">
+            <use href="./image/sprite.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+          <ul class="mobile-menu list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link current" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item"><a class="menu__link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-connect list">
+          <li class="mobile-connect__item">
+            <a class="mobile-connect__link" href="mailto:info@devstudio.com"
+              ><svg class="mobile-connect__icon" width="16" height="12">
+                <use href="./image/sprite.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-connect__item">
+            <a class="mobile-connect__link" href="tel:+380961111111"
+              ><svg class="mobile-connect__icon" width="10" height="16">
+              <use href="./image/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container ">
