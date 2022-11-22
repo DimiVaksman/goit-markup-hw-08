@@ -13,10 +13,16 @@ background-color: #fff;
     fill: var(--blue-color);
     border-color:var(--blue-color);
 }
+@media screen and (min-width: 768px){
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    display: none;
+} 
 }
 
 .mob-menu{
-
+ 
 
 position: relative;
     width: 100vw;
