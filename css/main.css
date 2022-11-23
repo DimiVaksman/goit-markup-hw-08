@@ -833,21 +833,60 @@ span {
   letter-spacing: 0.03em;
 }
 
+.portfolio-text-two:first-child {
+  padding-bottom: 36px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .first-child-not-working {
+    padding-bottom: 36px;
+  }
+}
+
 .map {
   list-style-type: none;
 }
 
 /* -------------------------PORTFOLIO-PICTURES-Filter */
+.pictures-filter {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .pictures-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures-filter {
+    gap: 30px;
+  }
+}
+
 .filters-image-item {
   /* width: calc((100%-60px)/3); */
   width: 450px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filters-image-item:nth-child(n+7) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .filters-image-item {
+    width: 354px;
+  }
 }
-.filters-image-item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .filters-image-item {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filters-image-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+.filters-image-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .filters-list {
