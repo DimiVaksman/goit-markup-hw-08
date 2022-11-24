@@ -141,6 +141,8 @@ color: #757575;
 
     .mobile-soc{
         display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
 
     .mobile-soc__item:not(:last-child){
@@ -165,4 +167,10 @@ color: #2196F3;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+    }
+
+
+    .open-icon{
+    width: 30px;
+    height: 30px;
     }
